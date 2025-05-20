@@ -1,18 +1,18 @@
 -- Basic config
-require('core.plugins')
+require('core.install-plugins')
 require('core.mappings')
-require('plugins-config.nvimtree')
+require('plugins-config.nvim-tree')
 require('plugins-config.telescope')
 require('plugins-config.comment')
 require('plugins-config.lsp')
-require('plugins-config.farout-colorscheme')
-require('plugins-config.gruvbox-colorscheme')
+require('plugins-config.farout')
+require('plugins-config.gruvbox')
 require('plugins-config.nvim-cmp')
 require('plugins-config.lualine')
-require('plugins-config.presence-config')
+require('plugins-config.presence')
 require('plugins-config.catppuccin')
-require('plugins-config.indentation')
---
+require('plugins-config.indent-blackline')
+
 --Line counter
 vim.cmd("set number")
 vim.cmd("set relativenumber")
