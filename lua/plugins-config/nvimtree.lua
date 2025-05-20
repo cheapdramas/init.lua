@@ -29,6 +29,13 @@ require("nvim-tree").setup({
 	}
 })
 local api= require("nvim-tree.api")
-vim.keymap.set('n', '<leader>e',api.tree.toggle);
-
-
+--Toggle nvim-tree
+vim.keymap.set('n', '<leader>b',api.tree.toggle);
+--Reveal file in nvim-tree
+vim.keymap.set(
+	'n', '<leader>e',
+	function()
+  	api.tree.find_file({ open = true, focus = true })
+	end,
+	{ desc = "Reveal file in nvim-tree" }
+)

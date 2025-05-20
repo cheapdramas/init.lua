@@ -4,4 +4,10 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live gr
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
-vim.keymap.set('n', '<A-f>', function() builtin.lsp_document_symbols({ symbols='function' })end, { desc = 'Telescope find files' })
+--Find functions
+vim.keymap.set('n', '<A-f>', function()
+  require('telescope.builtin').lsp_document_symbols({
+    symbols = { 'Function', 'Method' },
+		prompt_title = 'Functions'  -- 👈 Custom title
+  })
+end, { desc = 'List Functions and Methods' })

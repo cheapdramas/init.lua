@@ -11,7 +11,7 @@ require('lualine').setup {
 				--
 
 
-				normal   = { b = { fg = '#FFFFFF', bg = '#01232e' },c = {fg= "#b2b2b2",bg = "#1c1c1c"} },
+				normal   = { b = { fg = '#FFFFFF', bg = '#22232E' },c = {fg= "#FFFFFF",bg = "#1c1c1c"} },
 				insert   = { c = { fg = '#FFFFFF', bg = '#1c1c1c' } },
 				visual   = { c = { fg = '#FFFFFF', bg = '#1c1c1c' } },
 				replace  = { c = { fg = '#FFFFFF', bg = '#3a3a3a' } },
@@ -54,3 +54,5 @@ require('lualine').setup {
 	  }},
 	}
 }
+
+
